@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <title>ChessVisu</title>
+</head>
+<body>
+    <section class="section" id="score-section">
+        <div class="columns">
+            <div class="column is-one-fifth is-offset-4">
+                <div class="box">
+                    <h1 class="title" id="score"></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="case-section">
+        <div class="columns">
+            <div class="column is-one-fifth is-offset-4">
+                <div class="box">
+                    <h1 class="title" id="laCase"></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="questions-section">
+        <div class="columns">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-one-fifth is is-offset-one-fifth">
+                        <p class="control">
+                            <input class="button" name="btnCouleur" value="Blanche" onclick="corrigerCouleur('blanche')"/>
+                        </p>            
+                    </div>
+                    <div class="column is-one-fifth is is-offset-one-fifth">
+                        <p class="control">
+                            <input class="button is-black" name="btnCouleur" value="Noire" onclick="corrigerCouleur('noire')"/>
+                        </p>            
+                    </div>
+                </div>
+                <div id="localisation">
+                    <div class="columns">
+                        <div class="container">
+                            <div class="field is-grouped">
+                                <p class="control">
+                                    <input class="button is-link" name="btnLocal" value="Bande" onclick="corrigerLocal('bande')"/>
+                                </p>
+                                <p class="control">
+                                    <input class="button is-info" name="btnLocal" value="Bande élargie" onclick="corrigerLocal('bande élargie')"/>
+                                </p>
+                                <p class="control">
+                                    <input class="button is-success" name="btnLocal" value="Centre élargi" onclick="corrigerLocal('centre élargi')"/>
+                                </p>
+                                <p class="control">
+                                    <input class="button is-warning" name="btnLocal" value="Centre" onclick="corrigerLocal('centre')"/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
