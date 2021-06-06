@@ -8,6 +8,15 @@
     <title>ChessVisu</title>
 </head>
 <body>
+    <section class="section" id="chrono-section">
+        <div class="columns">
+            <div class="column is-one-fifth is-offset-4">
+                <div class="box">
+                    <h1 class="title" id="chrono"></h1>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="section" id="score-section">
         <div class="columns">
             <div class="column is-one-fifth is-offset-4">
@@ -64,6 +73,38 @@
             </div>
         </div>
     </section>
+
+<!-- Modal -->
+<div id="modalFinPartie" class="modal">
+    <div class="modal-background" id="modalFinPartie_background"></div>
+    <div class="modal-content">
+      <div class="container">
+        <div class="box is-primary">La partie est finie</div>
+        <div class="box is-primary" id="txt_score_final"></div>
+        <input type="button" class="button is-blue" value="Redémarrer" id="modalFinPartie_btn" onclick="demarrerPartie()" />
+      </div>
+    </div>
+    <button
+      class="modal-close is-large"
+      id="modalFinPartie_btn_close"
+      aria-label="close"
+    ></button>
+  </div>
+
+  <div id="modalAccueil" class="modal">
+    <div class="modal-background" id="modalAccueil_background"></div>
+    <div class="modal-content">
+      <div class="container">
+        <div class="box is-primary">Bonjour</div>
+        <input type="button" class="button" id="modalAccueil_btn_demarrer" value="Démarrer" onclick="demarrerPartie()" />
+        <button class="modal-close is-large" id="modalAccueil_btn_close" aria-label="close"
+    ></button>  
+    </div>
+    </div>
+  </div>
+
+
+
     <script src="data.js"></script>
     <script src="index.js"></script>
 </body>
