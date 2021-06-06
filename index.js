@@ -3,7 +3,7 @@ let reponses = 0;
 let caseEnCours; 
 let temps = 0; 
 let chrono; 
-let temps_debut = 10;
+let temps_debut = 60;
 
 window.onload = initialisation
 
