@@ -1,5 +1,5 @@
 # ChessVisu
 
-ChessVisu est un logiciel servant à pratiquer la reconnaissance de la position des pièces du jeu d'échec.
+ChessVisu est un logiciel servant à pratiquer la reconnaissance de la position des pièces du jeu d'échecs.
 
-Il est crée avec passion par BerDuc.
+Il est créé avec passion par BerDuc.
